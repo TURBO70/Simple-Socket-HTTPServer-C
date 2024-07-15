@@ -1,4 +1,3 @@
-// main.c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,30 +13,30 @@ int main() {
     struct sockaddr_in address;
     int address_len = sizeof(address);
 
-    // Create server socket
+
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("Socket failed");
         exit(EXIT_FAILURE);
     }
 
-    // Configure server address
+
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(PORT);
 
-    // Bind server socket
+
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
         perror("Bind failed");
         exit(EXIT_FAILURE);
     }
 
-    // Listen for incoming connections
+
     if (listen(server_fd, 10) < 0) {
         perror("Listen failed");
         exit(EXIT_FAILURE);
     }
 
-    // Accept and handle client connections
+ 
     while (1) {
         printf("\nWaiting for a connection...\n");
 
@@ -46,7 +45,7 @@ int main() {
             exit(EXIT_FAILURE);
         }
 
-        handle_client(client_fd); // Delegate handling to server module
+        handle_client(client_fd); 
     }
 
     return 0;
