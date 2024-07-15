@@ -72,7 +72,7 @@ int main (){
         char *http_response = "HTTP/1.1 200 OK\n"
                       "Content-Type: text/plain\n"
                       "Content-Length: 13\n\n"
-                      "Hello world!\n";
+                      "Hello from my server!\n";
 
         //write to the socket
         //send queue os
