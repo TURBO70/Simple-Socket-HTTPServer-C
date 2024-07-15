@@ -1,5 +1,5 @@
 ## Description:
-<p id="description">This project implements a basic HTTP server in C that can handle GET and POST requests. It listens on a specified port (8080 by default) and responds to client requests accordingly.</p>
+<p id="description">This project implements a basic HTTP server in C using sockets to handle GET and POST requests. It listens on a specified port (8080 by default) and responds to client requests accordingly..</p>
 
 ## Dependencies
 * This project utilizes standard C libraries (stdio.h, stdlib.h, string.h, unistd.h, sys/socket.h, netinet/in.h) and assumes availability of POSIX sockets for networking.
