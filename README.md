@@ -5,7 +5,7 @@
 *This project utilizes standard C libraries (stdio.h, stdlib.h, string.h, unistd.h, sys/socket.h, netinet/in.h) and assumes availability of POSIX sockets for networking.
 
 
-<h2>🧐 Features</h2>
+<h2>Features</h2>
 
 *GET Requests: Supports handling of GET requests for root (/) and /index.html paths.
 
